@@ -70,25 +70,6 @@ const [details, setDetails] = useState({
 
   }catch(error){
     setError("City not found")
-    setData({
-      current: {
-        condition: {
-          icon: "",
-          text: "",
-        },
-        temp_c: 0,
-      },
-      location: {
-        name: "",
-        region: "",
-      },
-    });
-    setWeatherData({
-      forecast: {
-        forecastday: [],
-      },
-    });
-
   }
  }
   }
@@ -128,7 +109,7 @@ const [details, setDetails] = useState({
   return (
     <div className="bg-cover bg-gradient-to-r from-blue-500 to-blue-300 h-fit">
       <div className="bg-white/25 w-ful rounder-lg flex flex-col h-fit ">
-        {/* INPUT AND LOGO */}
+        
         <div className="flex flex-col md:flex-row justify-between items-center p-12">
           <Input  handleSearch={handleSearch} setLocation={setLocation}/>
           <h1 className=" mb-8 md:mb-0 order-1  text-white py-2 px-4 rounded-xl italic font-bold"> Weather App.</h1>
