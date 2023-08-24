@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 
 interface DayForeCast {
@@ -36,7 +35,7 @@ const weekForcast = ({ data }:WeekForecastProps) => {
             {new Date(day.date).toLocaleString("en-US", { weekday: "short" })}
           </p>
         
-          <Image src={day.day.condition.icon} alt="weather icon" />
+          <img src={day.day.condition.icon} alt="weather icon" />
           <div>
             <p> H {day.day.maxtemp_c.toFixed()}°</p>
             <p> L {day.day.mintemp_c.toFixed()}°</p>

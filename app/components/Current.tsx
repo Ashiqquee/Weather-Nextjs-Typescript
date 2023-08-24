@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { getCurrentDate } from '../utils/CurrentDate'
 import {MdLocationOn} from "react-icons/md"
 
@@ -33,7 +32,7 @@ const Current = ({data}:CurrentProps) => {
 
         {weatherIcon && (
           <div>
-            <Image
+            <img
               src={weatherIcon}
               alt={data.current.condition.text}
               className=" object-cover"

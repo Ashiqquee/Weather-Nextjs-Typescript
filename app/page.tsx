@@ -75,7 +75,7 @@ const [details, setDetails] = useState({
   }
 
   let content;
-  if(Object.keys(data).length===0 && error===""){
+  if(data.location.name.length===0 && error===""){
     content=(
       <div className="text-white text-center h-screen mt-[5rem]">
         <h2 className="text-3xl font-bold mb-4 "> welcome to weather app</h2>
